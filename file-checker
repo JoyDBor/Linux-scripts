@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+#read -p "Your file path" filename
+filename=$1
+if [[ -f $filename ]];then
+	echo "file exists and it's regulare file"
+fi
+
+if [[ -d $filename ]];then
+	echo "file exists and is directory"
+fi
+
+if [[ -r $filename ]];then
+	echo "This file is readable"
+fi

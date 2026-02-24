@@ -1,0 +1,11 @@
+#!/bin/bash
+for Name in $@; do 
+	case "$Name" in
+		b*)		echo "matched b...";;&
+		boris) 	echo "matched boris";;
+		d*)		echo "matched d...";;&
+		davit) 	echo "matched davit" ;;
+		*) 		echo Goodbye $Name;;
+	esac
+done
+

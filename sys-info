@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#Creating html document
+
+CURRENT_TIME=$(date +"%x %r %Z")
+TIME_STAMP="Generated $CURRENT_TIME, by $USER"
+UPTIME=$(uptime)
+title="System Information Report"
+
+cat << _EOF_
+<html>
+	<head>
+	<title> $title </title>
+	</head>
+	<body>
+		<h1>$title</h1>
+		<p>$TIME_STAMP,$UPTIME,</p>
+	</body>
+</html>"
+_EOF_

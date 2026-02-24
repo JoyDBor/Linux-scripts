@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+#Getting ip address as an argument
+
+ip_c4=$1
+
+until  ping -c 1 $ip_c4 > /dev/null 2>&1 ;do
+	echo "Trying..."
+done
+echo "Connected!"

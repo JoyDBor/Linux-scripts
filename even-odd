@@ -1,0 +1,19 @@
+#/usr/bin/env bash
+
+read -p "Write your number" number
+
+if [[ $number -gt 0 ]];then
+	echo "Your number is positive"
+elif [[ $number -eq 0 ]]; then
+	echo "Your number is zero"
+else
+	echo "Your number is negative"
+fi
+
+
+if (( number%2==0 ));then
+	echo "Your number is even"
+else 
+	echo "Your number is odd"
+fi
+
